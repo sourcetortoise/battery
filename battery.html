@@ -1,0 +1,43 @@
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="battery.css" media="all">
+  </head>
+
+  <body>
+    <div class="battery">
+      <div id="battery-level" class="level"></div>
+    </div>
+
+    <div class="radio-group">
+      <div class="mode-element">
+        <input type="radio" name="mode-radio" id="off" onchange="setMode(MODE_REST);" checked>
+        <label for="off">Off</label>
+      </div>
+
+      <div class="mode-element">
+        <input type="radio" name="mode-radio" id="draining" onchange="setMode(MODE_DRAIN)">
+        <label for="draining">Active</label>
+      </div>
+
+      <div class="mode-element">
+        <input type="radio" name="mode-radio" id="charging" onchange="setMode(MODE_CHARGE)">
+        <label for="charging">Charging</label>
+      </div>
+    </div>
+
+    <div class="options-group">
+      <div class="options-element">
+        <label for="capacity-slider">Capacity:</label>
+        <input id="capacity-slider" type="range" min="1" max="180" step="1">
+        <label id="capacity-label"></label>
+      </div>
+
+      <div class="options-element">
+        <label>Time to charge:</label>
+        <input type="number" min="1" max="60" step="1" id="break-duration" onchange="setBreakDuration()">
+        <label>minutes</label>
+      </div>
+    </div>
+    <script src="battery.js"></script>
+  </body>
+</html>
