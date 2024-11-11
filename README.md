@@ -1,4 +1,4 @@
-# battery
+# battery – livestreaming widget
 
 A rechargeable battery widget to use on long livestreams as a visual reminder to take breaks.
 
@@ -16,7 +16,8 @@ To operate the battery within OBS, right-click on the Browser source in the Sour
 
 The CSS is provided in SCSS format for easier modification, but you'll need to compile any changes to CSS for use.
 
-First [install sass](https://github.com/sass/dart-sass?tab=readme-ov-file#using-dart-sass), then navigate to the `battery` directory on your command line and run: `sass battery.scss:battery.css`.
+First [install sass](https://github.com/sass/dart-sass?tab=readme-ov-file#using-dart-sass), then navigate to the `battery` directory on your command line and run:
+```sass battery.scss:battery.css```
 
 ## Credits & License
 
