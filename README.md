@@ -2,6 +2,8 @@
 
 A rechargeable battery widget to use on long livestreams as a visual reminder to take breaks.
 
+![The battery](https://github.com/sourcetortoise/battery/blob/main/battery-preview.png "The battery")
+
 Try out a [live version](https://mirthturtle.com/battery).
 
 ## Usage
